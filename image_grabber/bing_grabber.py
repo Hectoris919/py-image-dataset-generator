@@ -9,6 +9,10 @@ from .abstract_grabber import AbstractGrabber
 from .grabbed_image import GrabbedImage
 from utils.utils import StringUtil
 
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-dev-shm-usage')
 
 class BingGrabber(AbstractGrabber):
     """Grab images from google search"""
