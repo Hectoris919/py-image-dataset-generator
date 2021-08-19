@@ -14,7 +14,7 @@ class GoogleGrabber(AbstractGrabber):
     """Grab images from google search"""
 
     full_image = True
-    GOOGLE_URL = "https://www.google.co.in/search?q=%s&source=lnms&tbm=isch"
+    GOOGLE_URL = "https://www.google.com/search?q=%s&source=lnms&tbm=isch"
 
     def __init__(self):
         pass
